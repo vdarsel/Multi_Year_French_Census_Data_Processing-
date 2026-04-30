@@ -49,7 +49,7 @@ change_col={
     "Canton ville":"Canton",
     }
 
-folder_geo = "../Table appartenance"
+folder_geo = "Data/Geo"
 
 
 def get_folder_year(year):
