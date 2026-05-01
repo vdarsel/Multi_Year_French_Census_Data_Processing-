@@ -65,7 +65,7 @@ def get_data_file(year, filename):
 
 def get_reference_file_year(year):
     folder = get_folder_year(year)
-    data = pd.read_csv(f"{folder}/full_dataset_Individual.csv", sep=";", low_memory=False, usecols=["City"])
+    data = pd.read_csv(f"{folder}/full_dataset_Individual.csv", sep=";", low_memory=False, usecols=["City","County"])
     return data
 
 def get_geo_file_year(year):
