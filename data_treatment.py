@@ -108,9 +108,9 @@ def process_data_datapaper_global(data, year, year_max, dir_save):
     ## Tranport means to comute
     match year:
         case _ if year<2017:
-            traduction = {"5":"6","6":"7","Z":"7"}
-        case _ if year>2016:
             traduction = {"Z":"6"}
+        case _ if year>2016:
+            traduction = {"4":"3","5":"4","6":"5","Z":"6"} # grouping motorized and non motorized two-wheels vehicles (change from 2017 census data)
             
     data_before_reweighting["Transport"] = data["TRANS"]
     for k,v in traduction.items():
